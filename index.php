@@ -23,7 +23,7 @@ else
 
     if($query = $connection->query($login))
     {
-        $records = $records->num_rows;
+        $records = $query->num_rows;
         if($records == 0)
         echo "Nie ma takiego użytkownika lub hasła!";
         else
